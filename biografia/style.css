@@ -1,0 +1,33 @@
+ /* style.css */
+
+/* Página completa */
+body {
+  background-color: purple;
+  margin: 0;
+  font-family: Arial, sans-serif; /* fuente personalizada */
+  line-height: 1.5;               /* interlineado */
+}
+
+/* Tarjeta de biografía */
+.tarjeta {
+  background-color: white;
+  padding: 20px;
+  margin: 40px auto;   /* auto arriba/abajo y auto izquierda/derecha para centrar */
+  max-width: 600px;    /* ancho máximo */
+  border-radius: 10px;
+}
+
+/* Colores para títulos */
+h1 {
+  color: grey;      /* color del título principal */
+  text-align: center;
+}
+
+h2 {
+  color: rgb(0, 0, 110);      /* color de los subtítulos */
+}
+
+/* Párrafos y lista heredan el interlineado del body */
+p, ul {
+  font-size: 14px;
+}
