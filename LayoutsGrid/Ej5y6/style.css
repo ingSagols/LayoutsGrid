@@ -1,0 +1,44 @@
+.pagina {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Columna menú (200px) y columna contenido (resto del espacio) */
+    grid-template-areas: 
+        "header header"
+        "menu contenido"
+        "footer footer";
+    gap: 10px; 
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: menu;
+}
+
+main {
+    grid-area: contenido;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.item {
+    border: 3px solid grey; 
+    padding: 20px;           
+    text-align: center;      
+    font-family: sans-serif; 
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .pagina {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "menu"
+            "contenido"
+            "footer";
+    }
+}
